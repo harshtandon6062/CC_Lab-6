@@ -20,6 +20,8 @@ pipeline {
 
                 docker run -d --name backend1 --network app-network backend-app
                 docker run -d --name backend2 --network app-network backend-app
+
+                sleep 3
                 '''
             }
         }
